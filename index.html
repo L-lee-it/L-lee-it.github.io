@@ -66,19 +66,11 @@
  
  
 }
-/*.carousel-control-next-icon:after
-{
-  content: '|';
-  font-size: 55px;
-  color: black;
-
+video{
+  width: 100%;
+  height: auto;
 }
 
-.carousel-control-prev-icon:after {
-  content: '|';
-  font-size: 55px;
-  color: black;
-}*/
 	</style>
 </head>
 
@@ -134,29 +126,15 @@ function showDivs(n) {
 }
 </script>
 
- 
-
-  <!---	
-
-
-<div class="content">
-  <h1 >Heading</h1>
-  <p>Lorem ipsum...</p>
- 
-  <button id="myBtn" onclick="myFunction()">Pause</button>
-</div>
-  <video autoplay muted loop id="myVid"> 
-				<source src ="C:\Users\ellio\Videos\Captures\ProjLit-TK1.mp4" type="video/mp4">
-			</video> -->
 <main role="main">
 
-  <div class="w3-content w3-row-padding" style="padding: 10px;">
+  <div class="row" style="padding: 10px;">
  
-  		 <div class="mySlides" style="width:100%;display:none">
+  		 <div class="mySlides" style="display:none">
   	<video autoplay loop muted  controls > 
 				<source src ="ProjLit-TK1.mp4" type="video/mp4"></video>
   </div>
-  <div class="mySlides" >
+  <div class="mySlides"  style="display:none">
   	<video autoplay loop  muted controls> 
 				<source src ="test1.mp4" type="video/mp4"></video>
   </div>
@@ -168,11 +146,15 @@ function showDivs(n) {
   	<video autoplay loop muted controls> 
 				<source src ="preal.mp4" type="video/mp4"></video>
   </div>
-  
-</div>
+   <div class="mySlides">
+    <video autoplay loop muted controls> 
+        <source src ="2player.mp4" type="video/mp4"></video>
+  </div>
+  </div>
 
-<div class="w3-row-padding w3-section">
-    <div class="w3-col s4">
+
+<div class="row">
+    <div class="col-md-12">
       <video poster class="demo w3-opacity w3-hover-opacity-off" style="width:25%;cursor:pointer" onclick="currentDiv(1)"> 
 				<source src ="ProjLit-TK1.mp4" type="video/mp4"></video> 
 
@@ -182,24 +164,12 @@ function showDivs(n) {
 				<source src ="test2.mp4" type="video/mp4"></video> 
 				<video poster class="demo w3-opacity w3-hover-opacity-off" style="width:25%;cursor:pointer" onclick="currentDiv(4)"> 
 				<source src ="preal.mp4" type="video/mp4"></video> 	
+          <video poster class="demo w3-opacity w3-hover-opacity-off" style="width:25%;cursor:pointer" onclick="currentDiv(5)"> 
+        <source src ="2player.mp4" type="video/mp4"></video>  
     </div>
 
 
   </div>
-   <!--  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>-->
-  
-
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
 
 </main>
 
